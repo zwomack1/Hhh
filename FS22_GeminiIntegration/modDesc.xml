@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+    <author>Jules</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Gemini Integration</en>
+    </title>
+    <description>
+        <en><![CDATA[This mod integrates with the Gemini AI to provide information about your farm.]]></en>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+
+    <actions>
+        <action name="GEMINI_EXPORT" category="VEHICLE" />
+    </actions>
+
+    <extraSourceFiles>
+        <sourceFile file="GeminiDisplay.lua" />
+        <sourceFile file="GeminiIntegration.lua" />
+    </extraSourceFiles>
+</modDesc>
