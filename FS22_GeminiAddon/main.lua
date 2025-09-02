@@ -71,8 +71,10 @@ function GeminiAddon:setupGeminiAPI()
 end
 
 function GeminiAddon:queryGemini(prompt, callback)
-    if self.apiKey == nil or self.apiKey == "" then
-        self:debug("API key not set. Please configure in geminiConfig.xml")
+    if self.apiKey == nil or self.apiKey == "" or self.apiKey == "YOUR_API_KEY_HERE" then
+        local errorMessage = "API key not set. Please configure in FS22_GeminiAddon/geminiConfig.xml"
+        self:debug(errorMessage)
+        self.chat:addMessage("Gemini", errorMessage)
         if callback then
             callback(nil)
         end

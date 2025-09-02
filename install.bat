@@ -1,9 +1,15 @@
 @echo off
 set "source=%~dp0FS22_GeminiAddon"
-set "target=C:\Users\Shadow\Documents\Farming Simulator 22 - SteamGG.net\mods"
+
+echo Welcome to the FS22_GeminiAddon installer.
+echo.
+echo Please provide the path to your Farming Simulator 22 mods directory.
+echo For example: C:\Users\YourUser\Documents\My Games\FarmingSimulator2022\mods
+echo.
+set /p target="Enter the path to your mods directory: "
 
 if not exist "%target%" (
-    echo Error: Target mods directory does not exist
+    echo Error: Target mods directory does not exist: "%target%"
     pause
     exit /b 1
 )

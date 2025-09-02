@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<config>
+    <!--
+        Replace YOUR_API_KEY_HERE with your actual Google Gemini API key.
+        You can get a key from https://aistudio.google.com/app/apikey
+    -->
+    <apiKey>YOUR_API_KEY_HERE</apiKey>
+</config>
