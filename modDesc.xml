@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="53">
+    <author>Cascade AI</author>
+    <version>1.0.0</version>
+    <title>Gemini AI Self-Modifying Addon</title>
+    <description>Adds Google Gemini integration for dynamic game modification</description>
+    <multiplayer supported="true"/>
+    <iconFilename>icon.png</iconFilename>
+    <extraSourceFiles>
+        <sourceFile filename="main.lua"/>
+        <sourceFile filename="geminiConfig.xml"/>
+        <sourceFile filename="geminiChat.lua"/>
+    </extraSourceFiles>
+    <keyBindings>
+        <keyBinding name="TOGGLE_GEMINI_CHAT" key="F7" modifiers="" />
+    </keyBindings>
+</modDesc>
